@@ -1,4 +1,4 @@
-# Mats Valgaeren
+# Portfolio Mats Valgaeren
 VFX artist by day, Pipeline TD by night.  
 [(LinkedIn)](https://www.linkedin.com/in/mats-valgaeren-5176b52a3/)
 
