@@ -1,53 +1,129 @@
 * {
-    box-sizing: border-box;
-    border: 2px solid;
+    background-color: #ffffff;
+    /*box-sizing: border-box;*/
+    /*border: 2px solid;*/
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
 }
+
 .main {
     font-size: 30px;
-    border-top: 10000px;
-    /*text-align: center;*/
+    /*border-top: 10000px;*/
 }
+
+p {
+    font-size: 20px;
+    color: #373737;
+}
+
+.topnav {
+    background-color: #282828;
+    overflow: hidden;
+    align-content: end;
+}
+
+
+.topnav a {
+    float: left;
+    background-color: #282828;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
+.topnav a:hover {
+    background-color: #ffffff;
+    color: #282828;
+}
+
+/*!* Add a color to the active/current link *!*/
+/*.topnav a.active {*/
+/*    background-color: #04AA6D;*/
+/*    color: white;*/
+/*}*/
 
 .profile {
-    padding: 10px;
+    display: flex;
+    justify-content: flex-end; /* Pushes content to the right */
+    align-items: flex-start;
+    width: 100%;
+    min-height: 100vh; /* Optional: full height */
     box-sizing: border-box;
-
-    /*display: flex;*/
-    align-items: right;
-    text-align: right;
-    /*border-left: 50px;*/
-    /*justify-content: flex-end;*/
+    padding: 2rem;     /* Optional: spacing from right edge */
     width: 50%;
     float: left;
-    /*text-align: right;*/
-}
-
-.text {
-    /*max-width: 100px;*/
-    /*margin: 0 auto;*/
-    /*text-align: left;*/
 }
 
 .image {
-    display: block;
-    /*max-width: 100px;*/
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers content horizontally */
 }
+
+.icon {
+    height: 50px;
+    width: 50px;
+}
+
+img[alt="LinkedIn Logo"], img[alt="GitHub Logo"] {
+    width: 50px;
+    height: 50px;
+}
+
+img[alt="Mail Icon"] {
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin: auto; /* horizontally center if in a block element */
+    gap: 1rem;
+}
+
+
 
 .links {
-    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem; /* Even spacing between icons/links */
+    /*margin-top: 1rem;*/
 }
 
-.info {
-    padding: 15px;
-    border: 2px solid;
-    box-sizing: border-box;
-    width: 50%;
-    float: right;
-    border-left: 10px;
-    border-left-width: 10px;
+.links a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #333;
+    transition: color 0.2s;
+}
+
+.profile_pic {
+    width: 400px;
+    object-fit: contain;
+    border-radius: 50%; /* Optional: makes image circular */
+    margin-bottom: 1rem;
+}
+
+
+. container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.info, .personal, .work{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.scripts {
+    margin-left: 40rem;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+    margin-bottom: 0.2em; /* Adjust this value for more or less space */
 }
