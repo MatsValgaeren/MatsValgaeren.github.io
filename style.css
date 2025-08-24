@@ -30,14 +30,23 @@ p {
     background-color: #282828;
     color: #ffffff;
     text-align: center;
-    padding: 30px 40px;
+    padding: 0.5em 0.5em;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 0.8em;
 }
 
 .topnav a:hover {
     background-color: #ffffff;
     color: #282828;
+}
+
+
+#personal, #home /* or all your anchor target sections */ {
+  scroll-margin-top: 2em; /* height of your fixed nav */
+}
+
+#work {
+  scroll-margin-top: 2em;
 }
 
 
@@ -51,8 +60,7 @@ p {
     display: flex;
     justify-content: center;   /* Center items horizontally */
     align-items: center;       /* Center items vertically */
-    margin-top: 100px;
-    margin-bottom: 2rem;
+    margin-top: 6rem;
     gap: 2rem;                 /* Spacing between the two items */
 }
 
@@ -72,7 +80,8 @@ p {
     display: flex;
     /*width: 60%;                !* Adjust as needed *!*/
     box-sizing: border-box;
-    /*padding: 2rem;*/
+
+    margin-left: 1em;
 }
 
 
@@ -98,7 +107,7 @@ img[alt="Mail Icon"] {
     height: 60px;
     display: block;
     margin: auto; /* horizontally center if in a block element */
-    gap: 1rem;
+    gap: 0rem;
 }
 
 
@@ -109,6 +118,7 @@ img[alt="Mail Icon"] {
     justify-content: center;
     gap: 2rem; /* Even spacing between icons/links */
     /*margin-top: 1rem;*/
+    margin-left: 0.3em;
 }
 
 .links a {
@@ -119,7 +129,7 @@ img[alt="Mail Icon"] {
 }
 
 .profile_pic {
-    width: 300px;
+    width: 10em;
     object-fit: contain;
     border-radius: 50%; /* Optional: makes image circular */
     margin-bottom: 1rem;
@@ -136,14 +146,14 @@ img[alt="Mail Icon"] {
 }
 
 .title h1 {
-    font-size: 5rem;
-    line-height: 4rem;
-
+    font-size: 6rem;
+    line-height: 6rem;
 }
 
 .title h3 {
     font-size: 2rem;
 }
+
 
 .videos {
     display: flex;
@@ -162,47 +172,71 @@ h1, h2, h3, h4, h5, h6, p {
 #info {
     display: flex;
     justify-content: center; /* or center */
-    max-width: 1000px;
+    /*max-width: 1000px;*/
     width: 100%;
     margin: 2rem auto; /* centers horizontally */
     gap: 2rem;
 }
 
 
-.video-list {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5em;
+.projects {
+  width: 900px;
+  align-items: center;          /* center horizontally */
+  gap: 2em;                    /* space between each video-box */
+  padding: 3em 0;
+
+  margin: 0 auto;
 }
+
 
 .video-box {
-    display: flex;
-    align-items: center;
+  display: flex;
+  /*flex-direction: row;*/
+  background: #4a4a4a;
+  border-radius: 18px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 1em;
+  overflow: hidden;
 
-    background: #4a4a4a;
-    border-radius: 18px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    padding: 1em 1em;
-
-    max-width: 1000px;
-    margin: 0 auto;
-    color: white;
+  margin-bottom: 1em;
 }
 
-.video-box iframe {
-    /*border-radius: 12px;*/
-    flex-shrink: 0;
+.media-wrapper {
+  position: relative;
+  width: 50%;               /* Make wrapper responsive to container */
+  max-width: 20em;           /* Optional max width */
+  padding-top: 28%;       /* 16:9 aspect ratio (height = 56.25% of width) */
+  overflow: hidden;
+  border-radius: 12px;
+  flex-shrink: 0;            /* Prevent shrinking smaller than 20em */
 }
+
+.media-wrapper img.media,
+.media-wrapper iframe.media {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;       /* Match wrapper border radius */
+  display: block;
+  border: 0;
+}
+
+
 
 .video-info {
-    margin-left: 1.5em;
-    background: transparent;
-    color: #ffffff;
+  margin-left: 1em;
+  width: 40%;
+  text-align: flex-start;
+  background: transparent;
+  color: #ffffff;
 }
 
 .video-info h2 {
-    margin: 0 0 0.3em 0;
-    font-size: 1.3em;
+    /*margin: 5em 0 8em 0;*/
+    font-size: 100%;
     background: transparent;
 }
 
@@ -210,21 +244,8 @@ h1, h2, h3, h4, h5, h6, p {
     margin: 0;
     font-weight: normal;
     color: #c8c7c7;
-    font-size: 1em;
+    font-size: 80%;
     background: transparent;
-}
-
-/* Responsive for small screens */
-@media (max-width: 600px) {
-    .video-box {
-        flex-direction: column;
-        align-items: stretch;
-        padding: 1em;
-    }
-    .video-info {
-        margin-left: 0;
-        margin-top: 1em;
-    }
 }
 
 .heading-with-logo {
@@ -233,12 +254,14 @@ h1, h2, h3, h4, h5, h6, p {
     /*text-align: left;*/
     gap: 0.5em; /* Space between text and logo */
     background: transparent; /* Ensures no background */
-    margin: 010px;
+    margin: 0.2em;
+    margin-left: 0;
 }
 
 .heading-with-logo h2 {
-    margin: 0;
+    margin: 0.5;
     background: transparent;
+    padding-top: 0.3rem !important;
 }
 
 .github-logo {
