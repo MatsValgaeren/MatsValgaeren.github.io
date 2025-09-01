@@ -1,67 +1,71 @@
 * {
-    background-color: #ffffff;
-    /*box-sizing: border-box;*/
-    /*border: 2px solid;*/
+  /*box-sizing: border-box;*/
+  /*border: 2px solid;*/
 
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 p {
-    font-size: 20px;
-    color: #373737;
+  font-size: 20px;
+  color: #373737;
 }
 
 .topnav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #282828;
-    overflow: hidden;
-    align-content: end;
-    z-index: 1000; /* Ensures it stays above other elements */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #222222;
+  overflow: hidden;
+  align-content: end;
+  z-index: 1000; /* Ensures it stays above other elements */
+  padding: 1rem;
+  padding-bottom: 0;
+
 }
 
 .topnav a {
-    float: left;
-    background-color: #282828;
-    color: #ffffff;
-    text-align: center;
-    padding: 0.5em 0.5em;
-    text-decoration: none;
-    font-size: 0.8em;
+  float: left;
+  color: #ffffff;
+  text-align: center;
+  padding: 0.5em 0.5em;
+  text-decoration: none;
+  font-size: 0.8em;
 }
 
 .topnav a:hover {
-    background-color: #ffffff;
-    color: #282828;
+  background-color: #ffffff;
+  color: #282828;
+
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 
 #personal, #home /* or all your anchor target sections */ {
-  scroll-margin-top: 2em; /* height of your fixed nav */
+  scroll-margin-top: 4em; /* height of your fixed nav */
 }
 
 #work {
-  scroll-margin-top: 2em;
+  /*scroll-margin-top: 1em;*/
 }
 
 
 
 .main {
-    font-size: 30px;
-    /*border-top: 10000px;*/
+  font-size: 30px;
+  /*border-top: 10000px;*/
 }
 
 .top {
-    display: flex;
-    justify-content: center;   /* Center items horizontally */
-    align-items: center;       /* Center items vertically */
-    margin-top: 6rem;
-    gap: 2rem;                 /* Spacing between the two items */
+  display: flex;
+  justify-content: center;   /* Center items horizontally */
+  align-items: center;       /* Center items vertically */
+  margin-top: 6rem;
+  gap: 2rem;                 /* Spacing between the two items */
 }
 
 /*.profile {*/
@@ -77,105 +81,105 @@ p {
 /*}*/
 
 .profile {
-    display: flex;
-    /*width: 60%;                !* Adjust as needed *!*/
-    box-sizing: border-box;
+  display: flex;
+  /*width: 60%;                !* Adjust as needed *!*/
+  box-sizing: border-box;
 
-    margin-left: 1em;
+  margin-left: 1em;
 }
 
 
 
 .image {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centers content horizontally */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers content horizontally */
 }
 
 .icon {
-    height: 50px;
-    width: 50px;
+  height: 50px;
+  width: 50px;
 }
 
 img[alt="LinkedIn Logo"], img[alt="GitHub Logo"] {
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
 }
 
 img[alt="Mail Icon"] {
-    width: 60px;
-    height: 60px;
-    display: block;
-    margin: auto; /* horizontally center if in a block element */
-    gap: 0rem;
+  width: 60px;
+  height: 60px;
+  display: block;
+  margin: auto; /* horizontally center if in a block element */
+  gap: 0rem;
 }
 
 
 
 .links {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem; /* Even spacing between icons/links */
-    /*margin-top: 1rem;*/
-    margin-left: 0.3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem; /* Even spacing between icons/links */
+  /*margin-top: 1rem;*/
+  margin-left: 0.3em;
 }
 
 .links a {
-    text-decoration: none;
-    font-size: 1.1rem;
-    color: #333;
-    transition: color 0.2s;
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #333;
+  transition: color 0.2s;
 }
 
 .profile_pic {
-    width: 10em;
-    object-fit: contain;
-    border-radius: 50%; /* Optional: makes image circular */
-    margin-bottom: 1rem;
+  width: 10em;
+  object-fit: contain;
+  border-radius: 50%; /* Optional: makes image circular */
+  margin-bottom: 1rem;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    /*width: 30%;                !* Adjust as needed *!*/
-    box-sizing: border-box;
-    padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  /*width: 30%;                !* Adjust as needed *!*/
+  box-sizing: border-box;
+  padding: 1rem;
 }
 
 .title h1 {
-    font-size: 6rem;
-    line-height: 6rem;
+  font-size: 6rem;
+  line-height: 6rem;
 }
 
 .title h3 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 
 .videos {
-    display: flex;
-    align-items: start;
-    /*width: 100px;*/
+  display: flex;
+  align-items: start;
+  /*width: 100px;*/
 }
 ul {
-    list-style-position: inside;
+  list-style-position: inside;
 }
 
 h1, h2, h3, h4, h5, h6, p {
-    margin-top: 0;
-    margin-bottom: 0.2em; /* Adjust this value for more or less space */
+  margin-top: 0;
+  margin-bottom: 0.2em; /* Adjust this value for more or less space */
 }
 
 #info {
-    display: flex;
-    justify-content: center; /* or center */
-    /*max-width: 1000px;*/
-    width: 100%;
-    margin: 2rem auto; /* centers horizontally */
-    gap: 2rem;
+  display: flex;
+  justify-content: center; /* or center */
+  /*max-width: 1000px;*/
+  width: 100%;
+  margin: 2rem auto; /* centers horizontally */
+  gap: 2rem;
 }
 
 
@@ -235,44 +239,44 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .video-info h2 {
-    /*margin: 5em 0 8em 0;*/
-    font-size: 100%;
-    background: transparent;
+  /*margin: 5em 0 8em 0;*/
+  font-size: 100%;
+  background: transparent;
 }
 
 .video-info h4 {
-    margin: 0;
-    font-weight: normal;
-    color: #c8c7c7;
-    font-size: 80%;
-    background: transparent;
+  margin: 0;
+  font-weight: normal;
+  color: #c8c7c7;
+  font-size: 80%;
+  background: transparent;
 }
 
 .heading-with-logo {
-    display: flex;
-    /*align-items: start;*/
-    /*text-align: left;*/
-    gap: 0.5em; /* Space between text and logo */
-    background: transparent; /* Ensures no background */
-    margin: 0.2em;
-    margin-left: 0;
+  display: flex;
+  /*align-items: start;*/
+  /*text-align: left;*/
+  gap: 0.5em; /* Space between text and logo */
+  background: transparent; /* Ensures no background */
+  margin: 0.2em;
+  margin-left: 0;
 }
 
 .heading-with-logo h2 {
-    margin: 0.5;
-    background: transparent;
-    padding-top: 0.3rem !important;
+  margin: 0.5;
+  background: transparent;
+  padding-top: 0.3rem !important;
 }
 
 .github-logo {
-    width: 28px;   /* Adjust as needed */
-    height: 28px;  /* Adjust as needed */
-    display: block;
-    background: transparent;
+  width: 28px;   /* Adjust as needed */
+  height: 28px;  /* Adjust as needed */
+  display: block;
+  background: transparent;
 }
 
 .GitHub {
-    background: transparent;
+  background: transparent;
 }
 
 
@@ -280,14 +284,68 @@ h1, h2, h3, h4, h5, h6, p {
 .video-box h2,
 .video-box a,
 .video-box img {
-    background: transparent; /* Ensure no background on text or images */
-    margin: 0;
-    padding: 0;
-    border: none;
-    display: inline-block;
-    vertical-align: middle;
+  background: transparent; /* Ensure no background on text or images */
+  margin: 0;
+  padding: 0;
+  border: none;
+  display: inline-block;
+  vertical-align: middle;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.footer-container {
+  background-color: #222222;
+  padding-bottom: 1rem;
+  padding-top: 2rem;
+}
+
+.footer {
+  width: 80%;
+  justify-content: center;
+  color: #ffffff;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  /*margin: auto;*/
+
+}
+
+.footer-heading {
+  display: flex;
+  flex-direction: column;
+  margin: 0.8rem;
+  margin-left: 4rem;
+
+}
+
+.footer-heading h2 {
+
+  padding: 0.4rem;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-heading a {
+  font-size: 1rem;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.4rem;
+  width: 8rem;
+}
+.footer-heading a:hover {
+  background-color: #ffffff;
+  color: #282828;
+
+  border-radius: 8px;       /* Match wrapper border radius */
+}
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
