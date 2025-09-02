@@ -205,6 +205,11 @@ h1, h2, h3, h4, h5, h6, p {
   margin-bottom: 1em;
 }
 
+a {
+  text-decoration: none;
+  color: inherit; /* optional: inherit text color from parent */
+}
+
 .media-wrapper {
   position: relative;
   width: 50%;               /* Make wrapper responsive to container */
